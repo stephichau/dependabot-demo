@@ -8,8 +8,8 @@ updates:
 
   - package-ecosystem: "npm"
     directories:
-      - "/javascript"
-      - "/sub-app-1"
+      - "**/javascript"
+      - "**/sub-app-1"
     schedule:
       interval: "weekly"
 
