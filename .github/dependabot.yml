@@ -5,10 +5,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-  - package-ecosystem: npm
-    directory: "/javascript"
+
+  - package-ecosystem: "npm"
+    directories:
+      - "/javascript"
+      - "/sub-app-1"
     schedule:
       interval: "weekly"
+
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
