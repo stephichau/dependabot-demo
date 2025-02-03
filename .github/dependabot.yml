@@ -13,8 +13,7 @@ updates:
 
     ignore:
       - dependency-name: "*"
-        update-types: # only update patch versions
-          - "version-update:semver-major"
+        update-types: ["version-update:semver-major"]
     schedule:
       interval: "weekly"
 
