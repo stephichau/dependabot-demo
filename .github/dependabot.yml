@@ -24,3 +24,16 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "uv"
+    directories:
+      - "python"
+    schedule:
+      interval: "daily"
+      time: "08:00"
+      timezone: "America/Santiago"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "[DEPENDABOT - uv]"
+    cooldown:
+      default-days: 7
