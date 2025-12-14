@@ -22,7 +22,7 @@ dev = [
 lint.select = [
   "ALL", # include all the rules, including new ones
 ]
-lint.per-file-ignores = { "*_test.py" = ["S101", "PLR2004", "PLR6301"] }
+# lint.per-file-ignores = { "*_test.py" = ["S101", "PLR2004", "PLR6301"] }
 lint.ignore = [
   "COM812",  # Trailing comma conflicts with formatter
   "CPY001", # Missing copyright notice at top of file
