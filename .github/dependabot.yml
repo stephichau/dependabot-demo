@@ -8,8 +8,8 @@ updates:
 
   - package-ecosystem: "npm"
     directories:
-      - "**/javascript"
-      - "**/sub-app-1"
+      - "client/javascript"
+      - "client/**"
 
     ignore:
       - dependency-name: "*"
@@ -21,7 +21,7 @@ updates:
       prefix: "[DEPENDABOT]"
 
   - package-ecosystem: bundler
-    directory: "/ruby"
+    directory: "ruby"
     schedule:
       interval: "weekly"
 
