@@ -41,14 +41,14 @@ line-length = 100
 preview = true
 fix = true
 
-# [tool.mypy]
-# disallow_untyped_defs = true
-# exclude = [".*_test\\.py$"]
-# explicit_package_bases = true
-# files = ["src"]
-# plugins = ["pydantic.mypy"]
-# python_version = "3.14"
-# strict = true
+[tool.mypy]
+disallow_untyped_defs = true
+exclude = [".*_test\\.py$"]
+explicit_package_bases = true
+files = ["src"]
+plugins = ["pydantic.mypy"]
+python_version = "3.14"
+strict = true
 
 # [[tool.mypy.overrides]]
 # ignore_errors = true
