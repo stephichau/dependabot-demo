@@ -54,11 +54,11 @@ strict = true
 ignore_errors = true
 module = ".*_test\\.py$"
 
-# [tool.pydantic-mypy]
-# init_forbid_extra = true
-# init_typed = true
-# warn_required_dynamic_aliases = true
-# warn_untyped_fields = true
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
 
-# [tool.pytest.ini_options]
-# cache_dir = "/tmp/.pytest_cache"
+[tool.pytest.ini_options]
+cache_dir = "/tmp/.pytest_cache"
