@@ -200,7 +200,7 @@ dependencies = [
     { name = "pydantic" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "colorlog" },
     { name = "mypy" },
@@ -212,13 +212,16 @@ dev = [
 requires-dist = [
     { name = "boto3", specifier = ">=1.41.2" },
     { name = "boto3-stubs", specifier = ">=1.41.5" },
-    { name = "colorlog", marker = "extra == 'dev'", specifier = ">=6.10.1" },
-    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.18.2" },
     { name = "pydantic", specifier = ">=2.12.4" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.0.1" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.14.6" },
 ]
-provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "colorlog", specifier = ">=6.10.1" },
+    { name = "mypy", specifier = ">=1.18.2" },
+    { name = "pytest", specifier = ">=9.0.1" },
+    { name = "ruff", specifier = ">=0.14.6" },
+]
 
 [[package]]
 name = "pydantic"
